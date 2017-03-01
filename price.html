@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>barbershop</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="small__logo">
+                    <a href="index.html"><img src="img/small-logo.png" alt="Barbershop" width="111" height="24" /></a>
+                </div>
+                <a class="fa fa-bars menu-drop-down" aria-hidden="true"></a>
+                <ul class="nav__box">
+                    <li class="nav__item"><a class="nav__link" href="index.html">Информация</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#2">Новости</a></li>
+                    <li class="nav__item"><a class="nav__link active">Прайс-лист</a></li>
+                    <li class="nav__item"><a class="nav__link" href="shop.html">Магазин</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#5">Контакты</a></li>
+                </ul>
+                <span class="enter"><a href="#" class="enter__btn">Вход</a></span>
+                <div class="login__form">
+                    <h1>АВТОРИЗАЦИЯ</h1>
+                    <fieldset>
+                        <form action="javascript:void(0);" method="get">
+                            <input type="email" required value="Логин" onBlur="if(this.value=='')this.value='Логин'" onFocus="if(this.value=='Логин')this.value='' ">
+                            <input type="password" required value="Пароль" onBlur="if(this.value=='')this.value='Пароль'" onFocus="if(this.value=='Пароль')this.value='' ">
+                            <input type="submit" value="ВОЙТИ">
+                        </form>
+                    </fieldset>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="price__list">
+        <div class="container">
+            <h1>Прайс-лист</h1>
+            <div class="navigation">
+                <ul class="breadcrumbs">
+                    <li class="crumb"><a href="index.html">Главная</a></li>
+                    <li class="crumb">Прайс-лист</li>
+                </ul>
+            </div>
+            <span class="article">Истинно мужская стрижка</span>
+            <div class="flex__container">
+                <section class="we__use">
+                    <h2>Мы используем только лучшие средства:</h2>
+
+                    <div class="facilities">
+                        <ul class="items">
+                            <li class="item">Baxter of california</li>
+                            <li class="item">Mr natty</li>
+                            <li class="item">Suavecito</li>
+                            <li class="item">Malin+Goetz</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="price">
+                    <h2>Цены на услуги наших мастеров:</h2>
+
+                    <table>
+                        <tr>
+                            <td>Стрижка</td>
+                            <td class="center">1500 р.</td>
+                        </tr>
+                        <tr>
+                            <td>Стрижка бороды</td>
+                            <td class="center">500 р.</td>
+                        </tr>
+                        <tr>
+                            <td>Накрутка усов</td>
+                            <td class="center">350 р.</td>
+                        </tr>
+                    </table>
+                </section>
+
+            </div>
+            <section class="about">
+                <h2>Несколько слов о нас:</h2>
+                <div class="about__us">
+                    <p>
+                        Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого
+                        клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество,
+                        мы делаем качество.
+                    </p>
+                    <p>
+                        Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время,
+                        даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу,
+                        чувствовать себя комфортно и свободно!
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <section class="footer__address">
+                <span>Барбершоп «Бородинский»</span>
+                <span>Адрес: г. Санкт-Петербург, Б. Конюшенная, Д. 19/8</span>
+                <a href="#" class="find__us">Как нас найти?</a>
+                <span>Телефон: <a class="call" href="callto:+7(495)6660266">+7 (495) 666-02-66</a></span>
+            </section>
+            <section class="social">
+                <h2 class="head">Давайте дружить!</h2>
+                <ul class="icons">
+                    <li><a class="icon" href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                    <li><a class="icon" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a class="icon" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+            </section>
+            <section class="designed">
+                <h2 class="head">Разработано:</h2>
+                <address><a href="htmlacademy.ru">HTMLAcademy.ru</a></address>
+            </section>
+        </div>
+    </footer>
+<script src="js/main.js"></script>
+</body>
+</html>

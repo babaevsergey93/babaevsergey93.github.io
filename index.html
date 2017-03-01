@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>barbershop</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a class="fa fa-bars menu-drop-down" aria-hidden="true"></a>
+                <ul class="nav__box">
+                    <li class="nav__item"><a class="nav__link active">Информация</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#2">Новости</a></li>
+                    <li class="nav__item"><a class="nav__link" href="price.html">Прайс-лист</a></li>
+                    <li class="nav__item"><a class="nav__link" href="shop.html">Магазин</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#5">Контакты</a></li>
+                </ul>
+                <span class="enter"><a href="#" class="enter__btn">Вход</a></span>
+                <div class="login__form">
+                    <h1>АВТОРИЗАЦИЯ</h1>
+                    <fieldset>
+                        <form action="javascript:void(0);" method="get">
+                            <input type="email" required value="Логин" onBlur="if(this.value=='')this.value='Логин'" onFocus="if(this.value=='Логин')this.value='' ">
+                            <input type="password" required value="Пароль" onBlur="if(this.value=='')this.value='Пароль'" onFocus="if(this.value=='Пароль')this.value='' ">
+                            <input type="submit" value="ВОЙТИ">
+                        </form>
+                    </fieldset>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Барбершоп" width="368" height="152" />
+            </div>
+            <section class="advantages">
+                <div class="item">
+                    <h2 class="head">Быстро</h2>
+                    <span></span>
+                    <p class="text">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
+                </div>
+                <div class="item">
+                    <h2 class="head">Круто</h2>
+                    <span></span>
+                    <p class="text">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+                </div>
+                <div class="item">
+                    <h2 class="head">Дорого</h2>
+                    <span></span>
+                    <p class="text">Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
+                </div>
+            </section>
+            <section class="index-content-photonews">
+                <div class="news">
+                    <h2 class="head">Новости</h2>
+                    <ul>
+                        <li>
+                            <p class="text">Нам наконец завезли ягермейстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+                            <time datetime="2016-09-25">11 января</time>
+                        </li>
+                        <li>
+                            <p class="text">В нашей команде пополнение, Борис «Бритва» стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+                            <time datetime="2016-01-18">18 января</time>
+                        </li>
+                        <li></li>
+                    </ul>
+                    <a href="#" class="all_news btn">Все новости</a>
+                </div>
+                <div class="photos">
+                    <h2 class="head">Фотогалерея</h2>
+                    <div class="gallery-img">
+                        <img src="img/gallery-img.jpg" width="300" height="178" alt="Студия" />
+                    </div>
+                    <div class="buttons">
+                        <a href="#" class="back btn">Назад</a>
+                        <a href="#" class="forward btn">Вперед</a>
+                    </div>
+                </div>
+            </section>
+            <section class="index-content-sign">
+                <div class="contact">
+                    <h2 class="head">Контактная информация</h2>
+                    <div class="address">
+                        <span>Барбершоп «Бородинский»</span>
+                        <span>Адрес: г. Санкт-Петербург, Б. Конюшенная, Д. 19/8</span>
+                        <span>Телефон: <a class="call" href="callto:+7(495)6660266">+7 (495) 666-02-66</a></span>
+                    </div>
+                    <div class="time">
+                        <span>Время работы:</span>
+                        <span>Пн — Пт: С 10:00 до 22:00</span>
+                        <span>Сб — Вс: С 10:00 до 19:00</span>
+                    </div>
+                    <div class="buttons">
+                        <a href="#" class="way btn">Как проехать</a>
+                        <a href="#" class="feedback btn">Обратная связь</a>
+                    </div>
+                </div>
+                <div class="sign__up">
+                    <h2 class="head">Записаться</h2>
+                    <span>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</span>
+                    <form action="#" class="form" id="form">
+                        <input type="text" class="date" id="date" placeholder="Дата" />
+                        <input type="text" class="time" id="time" placeholder="Время" />
+                        <input type="text" class="name" id="name" placeholder="Ваше имя" />
+                        <input type="text" class="number" id="number" placeholder="Телефон" />
+                        <input type="submit" value="Отправить" class="send btn">
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <!--<div class="flex-container">-->
+                <section class="footer__address">
+                    <span>Барбершоп «Бородинский»</span>
+                    <span>Адрес: г. Санкт-Петербург, Б. Конюшенная, Д. 19/8</span>
+                    <a href="#" class="find__us">Как нас найти?</a>
+                    <span>Телефон: <a class="call" href="callto:+7(495)6660266">+7 (495) 666-02-66</a></span>
+                </section>
+                <section class="social">
+                    <h2 class="head">Давайте дружить!</h2>
+                    <ul class="icons">
+                        <li><a class="icon" href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                        <li><a class="icon" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a class="icon" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </section>
+                <section class="designed">
+                    <h2 class="head">Разработано:</h2>
+                    <address><a href="htmlacademy.ru">HTMLAcademy.ru</a></address>
+                </section>
+            <!--</div>-->
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
