@@ -365,6 +365,15 @@ body {
 
 .sidebar {
   margin-right: 10px; }
+  .sidebar fieldset {
+    padding: 10px 0;
+    border: none; }
+    .sidebar fieldset legend {
+      font-size: 24px; }
+  .sidebar input.btn {
+    border: none;
+    text-transform: uppercase;
+    font-family: 'PT Sans Narrow', Arial, sans-serif; }
 
 .brands {
   display: flex;
@@ -428,7 +437,8 @@ body {
 .option {
   background-color: #ffffff;
   width: 220px;
-  height: 296px;
+  min-height: 296px;
+  align-items: flex-start;
   margin: 0 20px 20px 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
   .option .text__frame {
@@ -527,7 +537,7 @@ body {
   .price__list .price table {
     border-collapse: collapse; }
     .price__list .price table td {
-      width: 231px;
+      width: 220px;
       border: 2px solid #000;
       padding: 15px; }
     .price__list .price table .center {
@@ -556,17 +566,17 @@ body {
     padding: 29px 30px 30px 6px; }
   .preparations__for__care .flex-container {
     flex-direction: column; }
-    .preparations__for__care .flex-container .sidebar {
+  .preparations__for__care form {
+    display: flex;
+    justify-content: space-around; }
+    .preparations__for__care form .brands {
+      flex-direction: column;
       display: flex;
-      align-items: baseline;
-      justify-content: space-around;
-      margin-bottom: 20px; }
-      .preparations__for__care .flex-container .sidebar .brands {
-        flex-direction: column;
-        display: flex;
-        padding-right: 20px; }
-    .preparations__for__care .flex-container .products {
-      justify-content: space-around; }
+      padding-right: 20px; }
+    .preparations__for__care form input.btn {
+      max-height: 50px; }
+  .preparations__for__care .products {
+    justify-content: space-around; }
   .preparations__for__care .pages {
     margin: 0;
     display: flex;
@@ -616,10 +626,11 @@ body {
     flex-direction: column; }
     .preparations__for__care .flex__container aside.sidebar .brands, .preparations__for__care .flex__container aside.sidebar .product__groups {
       margin: 0 auto 20px auto; }
-  .sidebar {
+  form {
     flex-direction: column;
-    align-items: center; }
-    .sidebar .brands, .sidebar .product__groups, .sidebar .show__btn {
+    align-items: center;
+    margin-bottom: 20px; }
+    form .brands, form .product__groups, form .show__btn {
       margin: 0 auto; }
   .about .about__us {
     display: flex;

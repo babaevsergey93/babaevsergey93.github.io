@@ -44,6 +44,7 @@
     <div class="container">
         <h1>Средства для ухода</h1>
         <div class="navigation">
+            <div class="show__btn"></div>
             <ul class="breadcrumbs">
                 <li class="crumb"><a href="index.html">Главная</a></li>
                 <li class="crumb"><a href="shop.html">Магазин</a></li>
@@ -52,41 +53,40 @@
         </div>
         <div class="flex-container">
             <aside class="sidebar">
-                <div class="brands">
-                    <h2>Производители:</h2>
-                    <input class="checkbox" type="checkbox" id="1">
-                    <label for="1">Baxter of california</label>
+                    <form action="action.php">
+                        <fieldset class="brands">
+                            <legend>Производители:</legend>
+                            <input class="checkbox" type="checkbox" id="1">
+                            <label for="1">Baxter of california</label>
 
-                    <input class="checkbox" type="checkbox" id="2">
-                    <label for="2">Mr Natty</label>
+                            <input class="checkbox" type="checkbox" id="2">
+                            <label for="2">Mr Natty</label>
 
-                    <input class="checkbox" type="checkbox" id="3">
-                    <label for="3">Suavecito</label>
+                            <input class="checkbox" type="checkbox" id="3">
+                            <label for="3">Suavecito</label>
 
-                    <input class="checkbox" type="checkbox" id="4">
-                    <label for="4">Malin-goetz</label>
+                            <input class="checkbox" type="checkbox" id="4">
+                            <label for="4">Malin-goetz</label>
 
-                    <input class="checkbox" type="checkbox" id="5">
-                    <label for="5">Murray`s</label>
+                            <input class="checkbox" type="checkbox" id="5">
+                            <label for="5">Murray`s</label>
 
-                    <input class="checkbox" type="checkbox" id="6">
-                    <label for="6">American Crew</label>
-                </div>
+                            <input class="checkbox" type="checkbox" id="6">
+                            <label for="6">American Crew</label>
+                        </fieldset>
+                        <fieldset class="product__groups">
+                            <legend>Группы товаров:</legend>
+                            <input class="radio" name="group" type="radio" id="7">
+                            <label for="7">Бритвенные принадлежности</label> <br/>
 
-                <div class="product__groups">
-                    <h2>Группы товаров:</h2>
-                    <input class="radio" name="group" type="radio" id="7">
-                    <label for="7">Бритвенные принадлежности</label> <br/>
+                            <input class="radio" name="group" type="radio" id="8">
+                            <label for="8">Средства для ухода</label> <br/>
 
-                    <input class="radio" name="group" type="radio" id="8">
-                    <label for="8">Средства для ухода</label> <br/>
-
-                    <input class="radio" name="group" type="radio" id="9">
-                    <label for="9">Аксессуары</label> <br/>
-                </div>
-                <div class="show__btn">
-                    <a class="btn" href="#">Показать</a>
-                </div>
+                            <input class="radio" name="group" type="radio" id="9">
+                            <label for="9">Аксессуары</label> <br/>
+                        </fieldset>
+                        <input class="btn" type="submit" value="Показать"/>
+                    </form>
             </aside>
             <section class="products">
                 <div class="option">

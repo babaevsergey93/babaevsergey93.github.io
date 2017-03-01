@@ -446,6 +446,18 @@ body {
 
 .sidebar {
 	margin-right:10px;
+	fieldset {
+		padding: 10px 0;
+		legend {
+			font-size: 24px;
+		}
+		border: none;
+	}
+	input.btn {
+		border: none;
+		text-transform: uppercase;
+		font-family: 'PT Sans Narrow', Arial, sans-serif;
+	}
 }
 
 .brands {
@@ -525,7 +537,8 @@ body {
 .option {
 	background-color: #ffffff;
 	width: 220px;
-	height: 296px;
+	min-height: 296px;
+	align-items: flex-start;
 	margin: 0 20px 20px 0;
 	box-shadow: 0 0 10px rgba(0,0,0,0.2);
 	.text__frame {
@@ -652,7 +665,7 @@ body {
 		table {
 			border-collapse: collapse;
 			td {
-				width: 231px;
+				width: 220px;
 				border: 2px solid #000;
 				padding: 15px;
 			}
@@ -701,21 +714,23 @@ body {
 	.preparations__for__care {
 		.flex-container {
 			flex-direction: column;
-			.sidebar {
+		}
+		form {
+			display: flex;
+			justify-content: space-around;
+			.brands {
+				flex-direction: column;
 				display: flex;
-				align-items: baseline;
-				justify-content: space-around;
-				margin-bottom: 20px;
-				.brands {
-					flex-direction: column;
-					display: flex;
-					padding-right: 20px;
-				}
+				padding-right: 20px;
 			}
-			.products {
-				justify-content: space-around;
+			input.btn {
+				max-height: 50px;
 			}
 		}
+		.products {
+			justify-content: space-around;
+		}
+
 		.pages {
 			margin: 0;
 			display: flex;
@@ -796,9 +811,10 @@ body {
 		}
 	}
 
-	.sidebar {
+	form {
 		flex-direction: column;
 		align-items: center;
+		margin-bottom: 20px;
 			.brands, .product__groups, .show__btn {
 				margin: 0 auto;
 			}
